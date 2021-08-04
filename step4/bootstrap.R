@@ -5,9 +5,12 @@
 
 library(dplyr)
 library(boot)
+library(ggplot2)
 
 data <- read.csv("step4/SS.csv")
-data=mutate(data, influential = influential == "high")
+data <- mutate(data, influential = influential == "high")
+
+ggplot(data, aes(x = SS, color = influential, fill = influential)) + geom_density(alpha = 0.5)+xlim(0, 10)
 
 mean_diff <- function(x, index) {
     xstar <- x[index, ] # boot will handle stratification for us

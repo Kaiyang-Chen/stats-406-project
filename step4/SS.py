@@ -16,15 +16,20 @@ for _,row in artists_df.iterrows():
     artists_features[row[2]]=row[3:-2]
 
 SS_df=pd.DataFrame(0,columns=["SS","influential"],index=influencer_list)
+counter={}
 
 for _,row in influence_df.iterrows():
     influencer=row.influencer_id
     follower=row.follower_id
     if influencer in artists_features.keys() and follower in artists_features.keys():
         SS_df.loc[influencer,"SS"]+=simi(artists_features[influencer],artists_features[follower])
+        counter[influencer]=counter.get(influencer,0)+1
         if influencer in high:
             SS_df.loc[influencer, "influential"] = "high"
         else:
             SS_df.loc[influencer, "influential"] = "low"
+
+for influencer in counter.keys():
+    SS_df.loc[influencer, "SS"]/=counter[influencer]
 
 SS_df.to_csv("SS.csv")
