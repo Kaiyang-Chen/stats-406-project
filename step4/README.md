@@ -6,7 +6,7 @@ In this step, we analyze the relationship between musical influence and similari
 
 ## Data
 
-We choose $\alpha=0.5$ as our ranking parameter. The rankings are saved in [influence_page_rank_0.5_0.csv](influence_page_rank_0.5_0.csv).
+- [influence_page_rank_0.5_0.csv](influence_page_rank_0.5_0.csv)
 
 ## How to run
 
