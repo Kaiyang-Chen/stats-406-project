@@ -31,7 +31,13 @@
 │   └── std
 └── step4
 ```
+## Step1
 
+Use influence_page_rank.py to implement PageRank algorithm and plot relevant figures. 
+
+Then use permutation_test_ranking.R to do permutation tests on the two rankings.
+
+Visual.py is used to generate influencial network plots.
 
 
 ## Step2
