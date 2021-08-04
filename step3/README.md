@@ -19,3 +19,7 @@ To run scripts successfully:
 - Please specify the path of input and output
 - Please install the necessary packages by yourself
 
+## Results
+
+![](std/MCC.jpeg)
+![](std/MCC_PermutationTest.jpeg)

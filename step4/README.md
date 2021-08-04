@@ -17,3 +17,7 @@ In this step, we analyze the relationship between musical influence and similari
 To run scripts successfully:
 - Please specify the path of input and output
 - Please install the necessary packages by yourself
+
+## Results
+
+![](SS.png)
