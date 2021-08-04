@@ -13,7 +13,7 @@ One assumption we make is that songs/musicians within the same genre are more si
 
 ## How to run
 
-1. Run [MCC.py](MCC.py) and get [artists.csv](std/artists.csv), [clusters.csv](std/clusters.csv), [MCC_null.csv](std/MCC_null.csv)
+1. Run [MCC.py](MCC.py) and get [artists.csv](std/artists.csv), [clusters.csv](std/clusters.csv)
 
 To run scripts successfully:
 - Please specify the path of input and output

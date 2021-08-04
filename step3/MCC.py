@@ -119,7 +119,7 @@ mcc_describe = mcc_random_df.describe()
 
 # save results
 clusters_df.to_csv("std/clusters.csv")
-mcc_describe.to_csv("std/mcc_null.csv")
+# mcc_describe.to_csv("std/mcc_null.csv")
 artist_df.to_csv("std/artists.csv")
 
 # visualization
