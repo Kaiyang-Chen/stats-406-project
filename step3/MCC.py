@@ -14,8 +14,8 @@ np.random.seed(SEED)
 random.seed(SEED)
 
 
-data_by_artist = pd.read_csv("../2021_ICM_Problem_D_Data/data_by_artist.csv")
-influence_data = pd.read_csv("../2021_ICM_Problem_D_Data/influence_data.csv")
+data_by_artist = pd.read_csv("../2021_ICM_Problem_D_Data_std/data_by_artist.csv")
+influence_data = pd.read_csv("../2021_ICM_Problem_D_Data_std/influence_data.csv")
 features_list = data_by_artist.columns[2:]
 
 # creating dict
@@ -118,9 +118,9 @@ mcc_random_df = mcc_random_df.T
 mcc_describe = mcc_random_df.describe()
 
 # save results
-clusters_df.to_csv("original/clusters.csv")
-mcc_describe.to_csv("original/mcc_null.csv")
-artist_df.to_csv("original/artists.csv")
+clusters_df.to_csv("std/clusters.csv")
+mcc_describe.to_csv("std/mcc_null.csv")
+artist_df.to_csv("std/artists.csv")
 
 # visualization
 fig = go.Figure()
